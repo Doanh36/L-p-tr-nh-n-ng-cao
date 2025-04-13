@@ -19,8 +19,8 @@ public:
 
 private:
     enum Direction { NONE, UP, DOWN, LEFT, RIGHT };
-    Direction m_direction = DOWN;
-    Direction m_nextDirection = DOWN;
+    Direction currentDir = NONE;
+    Direction nextDir = NONE;
     int m_x, m_y;
     int m_speed ;
 
